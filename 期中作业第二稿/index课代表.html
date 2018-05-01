@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        body{
+            background-color: azure;
+            margin: 0;
+        }
+
+
+        #top {
+            background-color: #555555;
+            position: fixed;
+            top:0;
+            left: 0;
+            height: 50px;
+            width: 100%;
+            z-index: 3;
+        }
+        a:link {color: cornsilk}
+        a:visited {color: cornsilk}
+        a:hover {color: cornsilk}
+        a:active {color: azure}
+
+        #A {
+            font-size: 30px;
+            font-style: inherit;
+            color: azure;
+            position: fixed;
+            top: 10px;
+            left: 300px;
+        }
+
+        #B {
+            font-size: 20px;
+            font-style: inherit;
+            color: azure;
+            position: fixed;
+            top: 15px;
+            left: 440px;
+        }
+        #C {
+            font-size: 20px;
+            font-style: inherit;
+            color: azure;
+            position: fixed;
+            top: 15px;
+            left: 660px;
+        }
+
+        #D {
+            font-size: 20px;
+            font-style: inherit;
+            color: azure;
+            position: fixed;
+            top: 15px;
+            left: 820px;
+        }
+
+        #E {
+            font-size: 20px;
+            font-style: inherit;
+            color: azure;
+            position: fixed;
+            top: 15px;
+            left: 1000px;
+        }
+
+        #imgs{
+            background-color: cornsilk;
+            position: absolute;
+            left:5px;
+            right:5px;
+            top: 80px;
+            overflow: hidden;
+            height: 400px;
+           z-index: 2;
+        }
+        #left{
+            width: 275px;
+            height: 960px;
+            background-color: bisque;
+
+            position: absolute;
+            top: 500px;
+            left: 5px;
+        }
+        #hair{
+            position: absolute;
+            left: 280px;
+            right: 5px;
+            height: 70px;
+            background-color: bisque;
+            top: 500px;
+        }
+        #选择{
+            width: 275px;
+            height: 700px;
+            position: absolute;
+            top: 500px;
+            left: 25px;
+            color: black;
+            font-size: 20px;
+        }
+        #日期{
+            position: absolute;
+            color: black;
+            font-size: 30px;
+            top: 575px;
+            left: 50px;
+        }
+        #任务1{
+            position: absolute;
+            top: 580px;
+            left: 290px;
+            width: 300px;
+            height: 200px;
+            margin: 0 auto;
+            background: url("img/任务2.jpg") repeat-y center;
+        }
+        #任务2{
+            position: absolute;
+            top: 580px;
+            left: 610px;
+            width: 300px;
+            height: 200px;
+            margin: 0 auto;
+            background: url("img/任务2.jpg") repeat-y center;
+        }
+        #任务3{
+            position: absolute;
+            top: 580px;
+            left: 930px;
+            width: 300px;
+            height: 200px;
+            margin: 0 auto;
+            background: url("img/任务2.jpg") repeat-y center;
+        }
+        #任务4{
+            position: absolute;
+            top: 800px;
+            left: 290px;
+            width: 300px;
+            height: 200px;
+            margin: 0 auto;
+            background: url("img/任务2.jpg") repeat-y center;
+        }
+        #任务5{
+            position: absolute;
+            top: 800px;
+            left: 610px;
+            width: 300px;
+            height: 200px;
+            margin: 0 auto;
+            background: url("img/任务2.jpg") repeat-y center;
+        }
+        #任务6{
+            position: absolute;
+            top: 800px;
+            left: 930px;
+            width: 300px;
+            height: 200px;
+            margin: 0 auto;
+            background: url("img/任务2.jpg") repeat-y center;
+        }
+               #任务7{
+            position: absolute;
+            top: 1020px;
+            left: 290px;
+            width: 300px;
+            height: 200px;
+            margin: 0 auto;
+            background: url("img/任务2.jpg") repeat-y center;
+        }
+        #任务8{
+            position: absolute;
+            top: 1020px;
+            left: 610px;
+            width: 300px;
+            height: 200px;
+            margin: 0 auto;
+            background: url("img/任务2.jpg") repeat-y center;
+        }
+        #任务9{
+            position: absolute;
+            top: 1020px;
+            left: 930px;
+            width: 300px;
+            height: 200px;
+            margin: 0 auto;
+            background: url("img/任务2.jpg") repeat-y center;
+        }
+        #任务10{
+            position: absolute;
+            top: 1240px;
+            left: 290px;
+            width: 300px;
+            height: 200px;
+            margin: 0 auto;
+            background: url("img/任务2.jpg") repeat-y center;
+        }
+        #任务11{
+            position: absolute;
+            top: 1240px;
+            left: 610px;
+            width: 300px;
+            height: 200px;
+            margin: 0 auto;
+            background: url("img/任务2.jpg") repeat-y center;
+        }
+        #任务12{
+            position: absolute;
+            top: 1240px;
+            left: 930px;
+            width: 300px;
+            height: 200px;
+            margin: 0 auto;
+            background: url("img/任务2.jpg") repeat-y center;
+        }
+        #发布代课需求{
+            width: 200px;
+            height: 70px;
+            position: absolute;
+            top: 500px;
+            right: 5px;
+            color: black;
+            font-size: 20px;
+            background-color: #555555;
+        }
+        #发布代课需求{
+            width: 250px;
+            height: 50px;
+            position: absolute;
+            top: 500px;
+            right: 5px;
+            color: black;
+            font-size: 30px;
+            background-color: #555555;
+            text-align: center;
+            padding-top: 10px;
+        }
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+<div  id="all">
+</div>
+<div id="top">
+    <div id="A"><a href="index.html">首页</a></div>
+    <div id="B"><a href="index二手.html">二手商品交易</a></div>
+    <div id="C"><a href="index课代表.html">课代表</a></div>
+    <div id="D"><a href="index失物招领.html">失物招领</a></div>
+    <div id="E"><a href="index兼职.html">兼职</a></div>
+</div>
+<div id="imgs">
+    <img src="img/1.jpg" alt="星空1">
+</div>
+
+<div id="left">
+
+</div>
+<div id="hair">
+
+</div>
+<div id="选择">
+    <br>
+    <label for="选择条件" id="请选择">请选择查找条件：</label>
+    <select name="" id="选择条件">
+        <option value="">按时间</option>
+        <option value="">按课程</option>
+        <option value="">按地点</option>
+        <option value="">按报酬</option>
+    </select>
+</div>
+<div id="日期">
+
+    <li><labal>星期一</labal></li>
+    <br>
+    <li><labal>星期二</labal></li>
+    <br>
+    <li><labal>星期三</labal></li>
+    <br>
+    <li><labal>星期四</labal></li>
+    <br>
+    <li><labal>星期五</labal></li>
+    <br>
+    <li><labal>星期六</labal></li>
+    <br>
+    <li><labal>星期日</labal></li>
+
+</div>
+<div id="任务1" ></div>
+<div id="任务2"></div>
+<div id="任务3"></div>
+<div id="任务4"></div>
+<div id="任务5"></div>
+<div id="任务6"></div>
+<div id="任务7"></div>
+<div id="任务8"></div>
+<div id="任务9"></div>
+<div id="任务10"></div>
+<div id="任务11"></div>
+<div id="任务12"></div>
+
+<div id="发布代课需求"><a href="">发布代课需求</a></div>
+
+
+</body>
+</html>
